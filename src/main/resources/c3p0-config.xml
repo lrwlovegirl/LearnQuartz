@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<c3p0-config>
+    <named-config name="设置一个连接名，之后会用到">
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://127.0.0.1:3306/servlet?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=UTC&amp;useSSL=false</property>
+        <property name="user">root</property>
+        <property name="password">123456</property>
+        <property name="acquireIncrement">5</property>
+        <property name="initialPoolSize">10</property>
+        <property name="minPoolSize">5</property>
+        <property name="maxPoolSize">20</property>
+        <property name="maxIdleTime">3600</property>
+        <property name="testConnectionOnCheckin">false</property>
+        <property name="testConnectionOnCheckout">true</property>
+    </named-config>
+
+</c3p0-config>
